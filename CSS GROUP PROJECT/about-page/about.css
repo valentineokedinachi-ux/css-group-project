@@ -65,6 +65,7 @@ header {
 .about-hero {
   height: 70vh;
   background: url("../about-page/images/restaurant\ img\ 1.png");
+  object-fit: cover;
   position: relative;
   display: flex;
   justify-content: center;
@@ -307,6 +308,14 @@ header {
             align-items: center;
             justify-content: center;
             gap: 20px;
+        }
+
+        .gallery-items{
+            width: 420px;
+            height: auto;
+        }
+        .awards ul{
+            padding: 15px;
         }
     
     }
