@@ -416,6 +416,9 @@ button  {
             text-align: center;
             padding: 20px 0;
         }
+        .welcome h2{
+            font-size: 2rem;
+        }
 
         .hamburger{
             display: block;
