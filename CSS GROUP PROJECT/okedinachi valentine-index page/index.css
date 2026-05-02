@@ -55,8 +55,8 @@ header {
 }
 .about img{
     border-radius: 25px;
-    width: 400px;
-    height: auto;
+    width: 500px;
+    height: 500px;
 
 }
 
@@ -419,6 +419,11 @@ button  {
 
         .hamburger{
             display: block;
+        }
+
+        .about img{
+            width: 100%;
+            height: 100%;
         }
         
 
