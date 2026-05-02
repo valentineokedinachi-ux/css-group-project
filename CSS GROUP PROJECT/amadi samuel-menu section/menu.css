@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(184, 172, 162, 0.231);
+    
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgb(103, 62, 62);
+}
+
+.logo{
+    width: 80px;
+    border-radius: 10% 5%;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.nav-links li a:hover {
+    color: goldenrod;
+    font-weight: 800; 
+    padding: 0.5rem 1rem ;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+        /* KITCHEN MENU SECTION */
+
+.kitchen-menu {
+    margin: 0 15px;
+}
+
+    /* HERO */
+
+.kitchen-menu-hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(./images/menu\ hero\ image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+    height: 25rem;
+    margin: 2px auto 2rem;
+    gap: 1.5rem;
+    border-radius: 20px;
+    /* padding-bottom: 1rem; */
+}
+
+.overlay {
+    position: absolute;
+    /* left: 15px; */
+    /* right: 15px; */
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.457);
+    border-radius: 20px;
+}
+
+.kitchen-menu-hero-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 5rem;
+}
+
+.kitchen-menu-hero-text > h1 {
+    color: white;
+    font-size: 2.5rem;
+    z-index: 900;
+    margin: 0 0 1rem 0 ;
+}
+
+.kitchen-menu-hero-text > p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 900;
+    margin: 0 auto;
+    margin: 0 0 1rem 0;
+}
+
+/* universal selections for Images */
+.kitchen-menu img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    padding: 1rem; 
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 45px;
+    font-weight: 600;
+    color: aliceblue;
+    background-color: rgb(70, 40, 1);
+    transition: all 100ms ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.appetizers h2,
+.main-dishes h2,
+.drinks h2,
+.desserts h2 {
+    margin: 4rem 0 0;
+    font-size: 2rem;
+}
+
+/* .appetizers > p,
+.main-dishes >p,
+.drinks >p,
+.desserts >p {
+    margin: 0 0 0.5rem;
+} */
+
+
+/* APPETIZERS */
+.appetizers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+.puff-puff,
+.fried-plantain-and-pap,
+.peppered-meat,
+.gizzard-and-snail,
+.nkwobi,
+.akara-and-pap,
+.fast-food-noodles,
+.pepper-soup    {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid brown;
+    max-width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(167, 92, 92, 0.099);
+    margin: 2rem auto;
+}
+
+.puff-puff,
+.fried-plantain-and-pap,
+.peppered-meat,
+.gizzard-and-snail,
+.nkwobi,
+.akara-and-pap,
+.fast-food-noodles,
+.pepper-soup > div {
+    line-height: 30px;
+}
+
+.puff-puff,
+.peppered-meat,
+.nkwobi,
+.fast-food-noodles {
+    transition: all 1s ease-in-out;
+}
+.puff-puff:hover,
+.peppered-meat:hover,
+.nkwobi:hover,
+.fast-food-noodles:hover {
+    transform: rotate(3deg);
+}
+
+.fried-plantain-and-pap,
+.gizzard-and-snail,
+.akara-and-pap,
+.pepper-soup {
+     transition: all 1s ease-in-out;
+ }
+
+.fried-plantain-and-pap:hover,
+.gizzard-and-snail:hover,
+.akara-and-pap:hover,
+.pepper-soup:hover {
+     transform: rotate(-3deg);
+ }
+
+
+/* MAIN DISHES */
+.main-dishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.jollof-and-spaghetti,
+.white-rice-and-stew-banga,
+.ofada-rice,
+.egusi-soup,
+.okra-soup,
+.vegitable-soup,
+.bitter-leaf-soup,
+.african-salad,
+.beans-and-roasted-plantain,
+.porridge-yam {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid brown;
+    max-width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(167, 92, 92, 0.096);
+    margin: 2rem auto;
+}
+
+.jollof-and-spaghetti,
+.white-rice-and-stew-banga,
+.ofada-rice,
+.egusi-soup,
+.okra-soup,
+.vegitable-soup,
+.bitter-leaf-soup,
+.african-salad,
+.beans-and-roasted-plantain,
+.porridge-yam > div {
+    line-height: 30px;
+}
+
+.jollof-and-spaghetti,
+.ofada-rice,
+.okra-soup,
+.bitter-leaf-soup,
+.beans-and-roasted-plantain {
+        transition: all 1s ease-in-out;
+}
+
+.jollof-and-spaghetti:hover,
+.ofada-rice:hover,
+.okra-soup:hover,
+.bitter-leaf-soup:hover,
+.beans-and-roasted-plantain:hover {
+        transform: rotate(3deg);
+}
+
+.white-rice-and-stew-banga, 
+.egusi-soup,
+.vegitable-soup,
+.african-salad,
+.porridge-yam {
+        transition: all 1s ease-in-out;
+}
+
+.white-rice-and-stew-banga:hover,
+.egusi-soup:hover,
+.vegitable-soup:hover,
+.african-salad:hover,
+.porridge-yam:hover {
+        transform: rotate(-3deg);
+}
+
+/* DRINKS */
+.drinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+.zobo,
+.fruit-smoothie,
+.fresh-palm-wine,
+.beverage-drinks,
+.beer,
+.tiger-nut-drink,
+.soyabean-milk {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid brown;
+    max-width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(167, 92, 92, 0.096);
+    margin: 2rem auto;
+}
+
+.zobo,
+.fruit-smoothie,   
+.fresh-palm-wine,
+.beverage-drinks,  
+.beer,
+.tiger-nut-drink,  
+.soyabean-milk > div {
+    line-height: 30px;
+}
+
+.zobo,
+.fresh-palm-wine,
+.beer,
+.soyabean-milk {
+        transition: all 1s ease-in-out;
+}
+
+.zobo:hover,
+.fresh-palm-wine:hover,
+.beer:hover,
+.soyabean-milk:hover {
+        transform: rotate(3deg);
+}
+
+.fruit-smoothie,
+.beverage-drinks,
+.tiger-nut-drink  {
+        transition: all 1s ease-in-out;
+}
+
+.fruit-smoothie:hover,
+.beverage-drinks:hover,
+.tiger-nut-drink:hover {
+        transform: rotate(-3deg);
+}
+
+
+
+/* DESSERTS */
+.desserts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+.chin-chin,
+.groundnut-candy-cake,
+.plantain-chips,
+.cooked-corn,
+.meat-pie {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid brown;
+    max-width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(167, 92, 92, 0.096);
+    margin: 2rem auto;
+}
+
+.chin-chin,            
+.groundnut-candy-cake,
+.plantain-chips,        
+.cooked-corn,
+.meat-pie > div {
+    line-height: 30px;
+}
+
+.chin-chin,
+.plantain-chips,
+.meat-pie  {
+        transition: all 1s ease-in-out;
+}
+
+.chin-chin:hover,
+.plantain-chips:hover,
+.meat-pie:hover  {
+        transform: rotate(3deg);
+}
+
+.groundnut-candy-cake,
+.cooked-corn {
+        transition: all 1s ease-in-out;
+}
+
+.groundnut-candy-cake:hover,
+.cooked-corn:hover  {
+        transform: rotate(-3deg);
+}
+
+
+/* DOWN PAGE FOOTER SECTION */
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 1rem;
+    text-shadow: 0 5px 3px gold;
+    font-size: 3rem;
+}
+
+.footer-content p {
+    margin: 15px 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.socials a {
+    color: #fff;
+    margin: 1rem auto 2rem;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.socials a:hover {
+    color: orange;
+    font-size: larger;
+    transform: translateY(-10px);
+}
+
+.copy {
+    background-color: wheat;
+    color: black;
+    padding: 10px 0;
+    width: 100%;
+    margin: auto;
+}
+
+.logo-2 {
+    width: 150px;
+    margin-top: 20px;
+}
+
+
+
+    /* MEDIA QUERY SECTION */
+
+    @media (min-width: 760px) {
+        .appetizers-contents,
+        .main-dish-contents,
+        .drinks-contents,
+        .desserts-contents {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 0 2rem;
+            
+        }
+    }
+
+
+
+    @media (min-width: 1000px) {
+        .appetizers-contents,
+            .main-dish-contents,
+            .drinks-contents,
+            .desserts-contents {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+        }
+
+        .footer-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+    @media (min-width: 1500px) {
+    
+        .kitchen-menu,
+        .footer-content {
+            max-width: 80%;
+        }
+
+        }
+    
+
+    }
+    @media(max-width:768px){
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            gap: 1rem;
+            top: 60px;
+            left: 0;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .hamburger{
+            display: block;
+        }
+        
+        .kitchen-menu-hero-text{
+            text-align: center;
+            margin-bottom: 1.5rem;
+            z-index: 1;
+        }
+
+    }
+
+
