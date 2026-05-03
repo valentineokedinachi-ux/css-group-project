@@ -161,8 +161,9 @@ header {
 .gallery-items img {
   height: 90%;
   width: 90%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
+  overflow: hidden;
 }
 
 .gallery-items:hover .overlay{
