@@ -308,11 +308,17 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .overlay{
+            align-self: center;
+            font-size: 1.3rem;
         }
 
         .gallery-items{
-            width: 420px;
+            width: 400px;
             height: auto;
         }
         .awards ul{
